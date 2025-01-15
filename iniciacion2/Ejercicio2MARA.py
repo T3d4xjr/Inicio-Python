@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #Escribir un programa que imprima por pantalla los números entre el 5 y el 20, saltando de tres en tres.
 
 #Con un bucle mostrar los numeros entre el 5 y el 20 saltando de 3 en 3.

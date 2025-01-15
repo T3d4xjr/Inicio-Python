@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #Escribir un programa que imprima la sumatoria de todos los múltiplos de 3 encontrados entre el 0 y el 100.
 #Iniciamos una variable que va a ser la que imprimimos con el sumatorio
 total = 0

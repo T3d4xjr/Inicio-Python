@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #Escribir un programa que pida al usuario un número entero positivo 
 # y muestre por pantalla todos los números impares desde 1 hasta ese número separados por comas.
 #Utilizamos el try para capturar si hay excepciones de cualquier tipo si no es un numero
