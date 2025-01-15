@@ -1,0 +1,1 @@
+#Escribir un programa que pida al usuario adivinar un número secreto entre 1 y 50. El programa le tiene que ir dando pista si el número secreto es mayor o menor en cada intento y si en menos de 7 intentos lo ha acertado, el usuario habrá ganado. En caso contrario, habrá perdido.

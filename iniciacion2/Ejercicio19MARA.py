@@ -1,0 +1,1 @@
+#Escribir un programa que pida al usuario una palabra y compruebe si es un palíndromo o no.

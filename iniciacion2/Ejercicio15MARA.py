@@ -6,13 +6,11 @@ numero2=int(input("Introduzca otro numero: "))
 
 operacion =str(input("Introduzca una operacion:Sumar = +,Restar = -,Multiplicar = *,Dividir = / : "))
 
-
-
 if operacion =="+":
     resultado=numero+numero2
     print(resultado)
 elif operacion =="-":
-    resultado=numero-numero2
+    resultado=numero-numero2    
     print(resultado)
 elif operacion =="*":
     resultado=numero*numero2
