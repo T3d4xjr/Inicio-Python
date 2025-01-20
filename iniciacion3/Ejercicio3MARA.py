@@ -17,8 +17,6 @@ def palabrasOrdenadas():
         # de mostrarlo lo mostramos teniendo en cuenta si son mayusculas o minusculas.
         lista.append(palabras)
         lista.sort(key=str.lower)
-
-        
         
     print("Palabras ordenadas: "+str(lista))
 palabrasOrdenadas()
