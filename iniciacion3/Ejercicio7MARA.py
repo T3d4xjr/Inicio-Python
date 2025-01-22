@@ -41,7 +41,7 @@ def verificar(contraseña):
         print("La contraseña debe tener al menos una mayúscula y una minúscula.")
         segura = False
     if not mayusYminus(contraseña):
-        print("La contraseña debe tener al menos un número.")
+        print("La contraseña debe tener al menos una mayuscula y una minuscula.")
         segura = False
     if not caracterEspecial(contraseña):
         print("La contraseña debe tener al menos un carácter especial (+, ), /, etc.).")
