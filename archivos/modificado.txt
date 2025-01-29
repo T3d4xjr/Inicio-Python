@@ -1,14 +1,14 @@
-me la pela: Juan Pérez
+esto se sustituyo: Juan Pérez
 Edad: 32
 Ocupación: Ingeniero de software
 Dirección: Calle Falsa 123, Ciudad del Sol
 
-me la pela: María López
+esto se sustituyo: María López
 Edad: 27
 Ocupación: Diseñadora gráfica
 Dirección: Avenida de los Pinos 456, Villa Verde
 
-me la pela: Carlos Méndez
+esto se sustituyo: Carlos Méndez
 Edad: 45
 Ocupación: Profesor de matemáticas
 Dirección: Plaza Mayor 789, Pueblo Azul

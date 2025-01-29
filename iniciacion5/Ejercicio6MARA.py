@@ -5,17 +5,17 @@ La suma de todos los números.
 El número máximo y mínimo.
 La media.
 """
-
+#Abrir archivo
 archivo=open("archivos/numeros.txt","r")
 
 numeros=archivo.readlines()
 
 numerosSuma=[]
-
+#Recorro cada numero y lo meto en otra lista
 for i in numeros:
 
     numerosSuma.append(int(i))
-
+#Operaciones del enunciado
 suma=sum(numerosSuma)
 print("La suma es: "+str(suma))
 numeroMaximo=max(numeros)

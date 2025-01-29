@@ -4,9 +4,11 @@ imprime su contenido línea por línea y muestra el número total de líneas que
 
 archivo=open('archivos/datos.txt','r')
 
+#Lee el archivo
 lineas=archivo.readlines()
 numLinea=0
 
+#Recorre cada linea y cuenta e l numero total
 for linea in lineas:
 
     numLinea +=1
