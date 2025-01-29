@@ -3,18 +3,19 @@
 A continuación, convierte los datos en un diccionario, donde la primera fila del CSV se usa como claves."""
 
 archivo=open("archivos/datos.csv","r")
+diccionario = {}
 
-lista=archivo.read()
-listaSeparada=lista.split(",")
+lista=archivo.readlines()
+claves = lista[0].split(",")
+for clave in claves:
+    diccionario[clave] = []
 
-diccionario = {
-    listaSeparada[0]: [listaSeparada[4], listaSeparada[9], listaSeparada[14]],
-    listaSeparada[1]: [listaSeparada[5], listaSeparada[10], listaSeparada[15]],
-    listaSeparada[2]: [listaSeparada[6], listaSeparada[11], listaSeparada[16]],
-    listaSeparada[3]: [listaSeparada[7], listaSeparada[12], listaSeparada[17]]
-}
 
-print("Las claves son: "+str(diccionario.keys()))
-print("Los valores son: "+str(diccionario.values()))
+for linea in lista[1:]:
+    valores = linea.strip().split(",")
+    for i in range(len(claves)):
+        diccionario[claves[i]].append(valores[i])
+        
+print(diccionario)
 
 archivo.close()
