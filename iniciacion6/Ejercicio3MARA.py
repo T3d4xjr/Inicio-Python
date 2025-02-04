@@ -2,7 +2,7 @@
 """Escribe un programa que lea el archivo “estudiantes.json” y que calcule y 
 muestre por pantalla la media de las calificaciones y el estudiante con las calificaciones más altas."""
 import json
-
+#Abrimos el fichero y lo recorremos y cada elemento de calificaicon lo metemos en una lista
 with open("archivos2/estudiantes.json","r") as fichero:
     estudiantes = json.load(fichero) 
     lista = [] 
@@ -10,7 +10,7 @@ with open("archivos2/estudiantes.json","r") as fichero:
     for estudiante in estudiantes:  
         calificacion = estudiante.get("calificacion") 
         lista.append(calificacion)
-            
+    #Realizamos las operaciones       
     media = sum(lista) / len(lista)
     print(media)
     mejorCalificacion=max(lista)

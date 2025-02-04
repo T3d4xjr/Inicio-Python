@@ -2,7 +2,7 @@
 """Escribe un programa que lea dos archivos json y combine ambos archivos en un único diccionario 
 y se guarde en un nuevo archivo json."""
 import json
-
+#Abrimos los archivos y los mezclamos en otro nuevo
 with open("archivos2/Ejercicio3.json","r") as fichero1:
     cadena1=json.load(fichero1)
 fichero1.close()

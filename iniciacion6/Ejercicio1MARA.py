@@ -2,6 +2,7 @@
 """Escribe un programa que lea un archivo json llamado “datos.json”, 
 carga los datos en un diccionario e imprima el valor asociado a la clave “nombre”."""
 import json
+#Abrimos el json y recorremos el primer elemento del nombre
 with open("archivos2/datos.json") as fichero:
     menu =json.load(fichero)
     print(menu)

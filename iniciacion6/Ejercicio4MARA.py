@@ -4,7 +4,7 @@ Una vez que se haya hecho la conversión, deberá modificar uno de los valores
 (el que cada uno considere) y volver a convertir el diccionario en un json."""
 import json
 
-
+#Abrimos un archivo y hacemos que mediante clave modifiquemos y escribamos en un nuevo fichero
 with open("archivos2/Ejercicio3.json","r") as fichero:
 
     cadena=json.load(fichero)
