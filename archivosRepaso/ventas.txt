@@ -1,0 +1,9 @@
+producto,cantidad,precio
+Manzanas,10,0.5
+Peras,5,0.75
+Manzanas,20,0.5
+Naranjas,15,0.6
+Plátanos,12,0.4
+Uvas,8,1.2
+Kiwis,6,1.0
+Fresas,18,0.9

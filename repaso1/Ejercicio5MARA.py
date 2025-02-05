@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*- 
 """Escribe un programa que, a partir de una lista de tuplas 
 con información de personas (nombre, edad, altura) realice lo siguiente:
 Convierta esta lista en un diccionario donde la clave sea el nombre 
