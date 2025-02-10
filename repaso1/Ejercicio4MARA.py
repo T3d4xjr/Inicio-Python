@@ -12,7 +12,6 @@ ventas ={
     "producto1":{"precio":10,"cantidad":5},
     "producto2":{"precio":20,"cantidad":3}
 }
-
 def calcularIngresos(ventas):
     totalIngresos=0
     for producto,datos in ventas.items():

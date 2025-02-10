@@ -6,7 +6,6 @@ Almacena la información en una lista de diccionarios.
 Calcula el total de ventas por producto.
 Escribe un informe con los resultados en un nuevo archivo de texto.
 """
-
 # Leer archivo de ventas y almacenar en una lista de diccionarios
 def leerVentas():
     ventas = []

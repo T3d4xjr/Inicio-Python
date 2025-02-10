@@ -16,14 +16,14 @@ def usuariolista():
             break
         if any(numero.isdigit() for numero in cadena):
             print("La cadena contiene un numero intentelo de nuevo")
-        
-        signos = ",.!¿¡?"
+        else:
+            signos = ",.!¿¡?"
 
-        cadenaSinSigno = cadena.translate(str.maketrans('', '', signos))
+            cadenaSinSigno = cadena.translate(str.maketrans('', '', signos))
 
-        lista = [cadenaSinSigno.lower()]
+            lista = [cadenaSinSigno.lower()]
 
-        print(lista)
+            print(lista)
         
         
 

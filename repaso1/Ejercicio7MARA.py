@@ -6,7 +6,6 @@ Convierte la lista en un diccionario donde la clave es el género
 Guarda el diccionario en un JSON y permite buscar películas por género.
 """
 import json
-
 peliculas = [
     ("El Padrino", 1972, "Crimen"),
     ("Pulp Fiction", 1994, "Crimen"),
@@ -22,7 +21,6 @@ for titulo, anio, genero in peliculas:
     if genero not in diccionario:
         diccionario[genero] = []
     diccionario[genero].append({"titulo": titulo, "año": anio})
-
 with open("archivosRepaso/peliculas.json", "w") as archivo:
     json.dump(diccionario, archivo)
 def buscarGenero(genero):

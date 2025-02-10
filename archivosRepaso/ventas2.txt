@@ -1,1 +1,1 @@
-Productos: Manzanastotal ingresado: 15.0Productos: Perastotal ingresado: 3.75Productos: Naranjastotal ingresado: 9.0Productos: Plátanostotal ingresado: 4.800000000000001Productos: Uvastotal ingresado: 9.6Productos: Kiwistotal ingresado: 6.0Productos: Fresastotal ingresado: 16.2
+Productos: Manzanas total ingresado: 15.0Productos: Peras total ingresado: 3.75Productos: Naranjas total ingresado: 9.0Productos: Plátanos total ingresado: 4.800000000000001Productos: Uvas total ingresado: 9.6Productos: Kiwis total ingresado: 6.0Productos: Fresas total ingresado: 16.2

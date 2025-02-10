@@ -10,24 +10,22 @@ def funcionCadena():
         cadena=str(input("Escribe un parrafo: "))
 
         cadenaSplit=cadena.split(" ")
-        print(cadenaSplit)
-        frecuenPalabra=[]
-        contarFrecuencia=[]
-        diccionarioPalabras={"palabras":""}
-        diccionarioFrecuenciaOrdenado={"frecuencia":""}
-        
+        frecuencia={}
+
+        #Cuenta cada palabra y va almacenandolas en un diccionario por su frecuencia
         for palabra in cadenaSplit:
-            if palabra in frecuenPalabra:
-                print("La palabra: "+palabra+" repetida se contar pero no se mostrara")
+            if palabra in frecuencia:
+                frecuencia[palabra]+=1
             else:
-                frecuenPalabra.append(palabra)
-                diccionarioPalabras["palabras"]=frecuenPalabra
-                contarFrecuencia.append(cadenaSplit.count(palabra))
-                contarFrecuencia.sort(reverse=True)
-                diccionarioFrecuenciaOrdenado["frecuencia"]=contarFrecuencia
-        diccionarioPalabras["palabras"].sort(reverse=True) 
-        print(str(diccionarioPalabras))
-        print(str(diccionarioFrecuenciaOrdenado))
+                frecuencia[palabra]=1
+        
+        #Nos piden que ordenemos por mayor a menor frecuencia para ello recorremos el diccionario ordenandolo 
+        # y utilizando la funcion lambda con valor x que seria todos los elementos y cogeria el segudo elemento que haya en el diccionario en este caso la frecuencia 
+        #Por el simple hecho que el diccionario en el 0 esta la clave y en el 1 esta los valores de esa clase que son la frecuencia que queremos ordenar
+
+        ordenarFrecuencia=dict(sorted(frecuencia.items(),key=lambda x:x[1],reverse=True))
+        print(frecuencia)
+        print(ordenarFrecuencia)
     except ValueError as e:
         print("Error de valor:", e)
     except Exception as e:

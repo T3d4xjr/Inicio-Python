@@ -15,7 +15,6 @@ personas = [
     ("Marta", 28, 1.65),
     ("Jorge", 35, 1.70)
 ]
-
 def conversionDiccionario(personas):
     diccionario = {}
     for nombre, edad, altura in personas:
@@ -23,10 +22,8 @@ def conversionDiccionario(personas):
     with open("archivosRepaso/archivo3.json", "w") as fichero:
         json.dump(diccionario, fichero)
 
-    return diccionario
-    
-def personasAltaMayor():
-    
+    return diccionario  
+def personasAltaMayor(): 
     with open("archivosRepaso/archivo3.json", "r") as fichero:
         datos=json.load(fichero)
 
