@@ -15,17 +15,18 @@ Se debe realizar sin necesidad de ninguna librería aparte.
 tablero = []
 print("Vamos a jugar al tres en raya. \n")
 
+#Crear el tablero par jugar
 for i in range(3):
     row = []
     for j in range(3):
         row.append("-")
     tablero.append(row)
-
+#Mostrar tablero
 def mostrar_tablero():
     for fila in tablero:
         print(fila)
 mostrar_tablero()
-
+#Menu donde iteramos los jugadores y sus acciones para saber si hacen trampa o ganaron o quedaron empatados
 while True:
         try:
             filajugador1 = int(input("Ingrese la fila jugador 1 (0, 1, 2): "))
