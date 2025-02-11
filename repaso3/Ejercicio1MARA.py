@@ -54,16 +54,29 @@ while True:
                 tablero[filajugador2][columnajugador2] = "O"
             mostrar_tablero()    
 
-            if tablero !="-":
-                if tablero[0][0] and tablero[1][1] and tablero[2][2] =="X":
-                    print("Jugador 1 ha ganado")
-                    break
-                elif tablero[0][0] and tablero[1][1] and tablero[2][2] =="0":
-                    print("Jugador 2 ha ganado")
-                    break
-                else:
-                    print("Nadie ha ganado ha sido un empate") 
-                    break
+            if (tablero[0][0] == tablero[1][1] == tablero[2][2] == "X" or 
+                tablero[0][2] == tablero[1][1] == tablero[2][0] == "X" or 
+                tablero[0][0] == tablero[0][1] == tablero[0][2] == "X" or 
+                tablero[1][0] == tablero[1][1] == tablero[1][2] == "X" or 
+                tablero[2][0] == tablero[2][1] == tablero[2][2] == "X" or 
+                tablero[0][0] == tablero[1][0] == tablero[2][0] == "X" or 
+                tablero[0][1] == tablero[1][1] == tablero[2][1] == "X" or 
+                tablero[0][2] == tablero[1][2] == tablero[2][2] == "X"):
+                print("Jugadsor 1 ha ganado")
+                break
+            elif (tablero[0][0] == tablero[1][1] == tablero[2][2] == "O" or 
+                tablero[0][2] == tablero[1][1] == tablero[2][0] == "O" or 
+                tablero[0][0] == tablero[0][1] == tablero[0][2] == "O" or 
+                tablero[1][0] == tablero[1][1] == tablero[1][2] == "O" or 
+                tablero[2][0] == tablero[2][1] == tablero[2][2] == "O" or 
+                tablero[0][0] == tablero[1][0] == tablero[2][0] == "O" or 
+                tablero[0][1] == tablero[1][1] == tablero[2][1] == "O" or 
+                tablero[0][2] == tablero[1][2] == tablero[2][2] == "O"):
+                print("Jugador 2 ha ganado")
+                break
+            if all(celda != "-" for fila in tablero for celda in fila):
+                print("¡Empate!")
+                break        
         except ValueError:
             print("¡Error! Por favor, ingrese un número válido para fila y columna.")  
             
