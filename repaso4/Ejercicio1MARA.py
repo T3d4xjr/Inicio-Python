@@ -4,6 +4,7 @@ Si el booleano es verdadero buscará y retornará los elementos comunes de los d
 Si el booleano es falso buscará y retornará los elementos no comunes de los dos array.
 """
 
+#Funcion que recoge dos arrays y los recorre con un bucle for y comprueba datos repetidos y no repetidos
 def buscarElementos():
     array=["manzana","platano","pera"]
     array2=["naranja","platano","pera","papa"]
@@ -25,6 +26,7 @@ def buscarElementos():
             
     mensaje=(input("Manda un true para ver los repetios y un false para los no repetidos:"))  
      
+    #Mensaje con booleano para ver repetidos y no repetios
     if mensaje=="true":
         print("Elementos repetidos: "+str(repetidos))
 
